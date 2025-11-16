@@ -11,7 +11,7 @@ const testParameters = [
   {
     email: user.email,
     password: '',
-    message: EMPTY_PASSWORD_MESSAGE,
+    message: INVALID_EMAIL_OR_PASSWORD_MESSAGE,
     title: 'empty password',
   },
   {
