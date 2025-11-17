@@ -6,9 +6,8 @@ export class YourFeedTab extends BaseComponent {
 
   constructor(page, userId = 0) {
     super(page, userId);
-
     this.#yourFeedLink = this.page.getByRole('link', {
-      name: /Your\s+Feed/i,
+      name: 'Your Feed',
     });
   }
 

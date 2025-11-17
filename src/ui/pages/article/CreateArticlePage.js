@@ -15,7 +15,7 @@ export class CreateArticlePage extends BasePage {
     this.publishArticleButton = page.getByRole('button', {
       name: 'Publish Article',
     });
-    this.errorMessage = page.locator('div.swal-title');
+    this.errorMessage = page.locator('.swal-text, .swal-title');
   }
 
   async fillTitleField(title) {

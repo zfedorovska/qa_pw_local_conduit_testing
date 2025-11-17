@@ -7,11 +7,12 @@ import {
 import { generateNewUserData } from '../../../src/common/testData/generateNewUserData';
 
 const user = generateNewUserData();
+
 const testParameters = [
   {
     email: user.email,
     password: '',
-    message: INVALID_EMAIL_OR_PASSWORD_MESSAGE,
+    message: EMPTY_PASSWORD_MESSAGE,
     title: 'empty password',
   },
   {
